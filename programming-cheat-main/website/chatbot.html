@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Cheat - Python Practice Hub</title>
+    <link rel="icon" href="https://cdn-icons-png.freepik.com/256/3242/3242120.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-image: url('https://static.vecteezy.com/system/resources/previews/002/099/443/non_2x/programming-code-coding-or-hacker-background-programming-code-icon-made-with-binary-code-digital-binary-data-and-streaming-digital-code-vector.jpg'); /* Replace with the path to your background image */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        output {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Python Practice Chatbot</h1>
+    </header>
+
+    <main>
+        <textarea id="chatInput" placeholder="Type your message here..."></textarea>
+        <button onclick="sendMessage()">Send Message</button>
+        <output id="chatOutput"></output>
+    </main>
+
+    <script>
+        function sendMessage() {
+            // You can add your chatbot logic here
+            // For simplicity, let's just display a message for now
+            const input = document.getElementById('chatInput').value;
+            document.getElementById('chatOutput').textContent = `You: ${input}\nChatbot: Your response will be displayed here.`;
+        }
+    </script>
+</body>
+</html>
